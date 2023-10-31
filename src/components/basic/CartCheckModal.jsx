@@ -1,6 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react';
 
-const CartCheckModal = ({ decideModal, isZero, setIsZero }) => {
+const CartCheckModal = ({ decideModal, isZero }) => {
   return (
     <>
       <Transition appear show={isZero} as="div">

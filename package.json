@@ -2,18 +2,22 @@
   "name": "member-actions",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://KFR1230.github.io/coffee-shop",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "classnames": "^2.3.2",
     "firebase": "^10.5.0",
+    "gh-pages": "^4.0.0",
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
