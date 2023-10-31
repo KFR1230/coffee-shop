@@ -145,7 +145,6 @@ video {
   margin: 0px;
   padding: 0px;
   border: none;
-  font-size: 100%;
   font: inherit;
   outline: none;
   background: transparent;
@@ -190,13 +189,6 @@ li {
   list-style: none;
 }
 
-input,
-button,
-textarea,
-select {
-  *font-size: 100%;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0px;
@@ -233,9 +225,6 @@ q:after {
   content: none;
 }
 
-.clearfix {
-  *zoom: 1;
-}
 .clearfix:before,
 .clearfix:after {
   display: table;

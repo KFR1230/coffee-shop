@@ -54,11 +54,11 @@ function RegisterPage() {
   }, [navigate, isAuthentic]);
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col px-6 py-12 lg:px-8 overflow-y-auto h-16 bg-paper-pattern">
+      <div className="flex min-h-full flex-1 flex-col px-6 py-12 lg:px-8 overflow-y-auto h-16 bg-[url('./assets/image/paper1920.jpg')]">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-14 w-auto"
-            src="src/assets/coffee-logo.png"
+            src="src/assets/image/coffee-logo.png"
             alt="Your Company"
           />
           <h2 className="mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">

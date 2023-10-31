@@ -19,7 +19,7 @@ const MemberDesCard = ({ memberName, memberAvatar, memberId }) => {
               className="w-12 h-12 mx-2 rounded-full"
             />
             <img
-              src="src/assets/pencil.svg"
+              src="src/assets/image/pencil.svg"
               alt="edit-member"
               className="w-4 h-4 filter-gray cursor-pointer "
               onClick={() => navigate('/setting')}

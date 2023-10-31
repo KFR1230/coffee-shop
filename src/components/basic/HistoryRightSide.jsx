@@ -11,7 +11,7 @@ const HistoryRightSide = ({ ...props }) => {
     );
   }
   return (
-    <section className=" max-sm:hidden w-2/3 h-full rounded-xl bg-gray-700/75">
+    <section className="max-sm:hidden w-2/3 h-auto rounded-xl ">
       <div className="rounded-t-xl bg-slate-100/95 h-8 w-full pl-4 ">
         <span className="text-slate-500 text-sm font-bold leading-8">
           目前未結算訂單

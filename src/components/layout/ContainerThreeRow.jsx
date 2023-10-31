@@ -25,7 +25,7 @@ const ContainerThreeRow = ({ children }) => {
   return (
     <>
       <div
-        className="min-h-screen h-full container-row flex flex-col bg-paper-pattern overflow-y-auto"
+        className="min-h-screen h-full container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] overflow-y-auto"
         onScroll={handleScroll}
         ref={top}
       >

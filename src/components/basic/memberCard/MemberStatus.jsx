@@ -12,7 +12,7 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
                 src={
                   memberAvatar
                     ? `${memberAvatar}`
-                    : 'src/assets/coffee-logo.png'
+                    : 'src/assets/image/coffee-logo.png'
                 }
                 alt="member-avatar"
                 className="w-6 h-6 mx-2 rounded-full"
@@ -24,7 +24,7 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
             </div>
 
             <img
-              src="src/assets/pencil.svg"
+              src="src/assets/image/pencil.svg"
               alt="edit-member"
               className="w-4 h-4 filter-gray cursor-pointer"
               onClick={() => navigate('/setting')}
@@ -53,7 +53,7 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
                 onClick={() => onClick?.('過去訂單')}
               >
                 <img
-                  src="src/assets/assept-document.svg"
+                  src="src/assets/image/assept-document.svg"
                   alt=""
                   className="w-6 h-6 sm:w-8 sm:h-8 mx-auto filter-white"
                 />

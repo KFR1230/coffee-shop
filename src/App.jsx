@@ -7,12 +7,9 @@ import SettingPage from './components/page/SettingPage';
 import { AuthProvider } from './components/context/AuthContext';
 import CartProvider from './components/context/CartContext';
 import CartPage from './components/page/CartPage';
-import AdminMainPage from './components/page/AdminMainPage';
-import AdminDessertPage from './components/page/AdminDessertPage';
 import AdminBeansPage from './components/page/AdminBeansPage';
 import HomePage from './components/page/HomePage';
 import HistoryPage from './components/page/HistoryPage';
-import BackToTopBtn from './components/basic/BackToTopBtn';
 
 function App() {
   return (

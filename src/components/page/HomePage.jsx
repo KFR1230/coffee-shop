@@ -22,11 +22,11 @@ const HomePage = () => {
           <section className="relative flex box-border rounded-xl w-11/12 h-96 justify-between sm:h-[28rem]  lg:h-screen mx-auto bg-white max-sm:flex-col">
             <div
               className="transform transition-all flex justify-center
-            items-end sm:justify-end sm:items-center box-border  rounded-xl w-full bg-coffee-shop bg-no-repeat bg-cover bg-center shadow-inner-mb h-full sm:shadow-inner-b"
+            items-end sm:justify-end sm:items-center box-border  rounded-xl w-full bg-[url('./assets/image/coffee-shop.jpg')] bg-no-repeat bg-cover bg-center shadow-inner-mb h-full sm:shadow-inner-b"
             >
               <div className="flex flex-col justify-center items-center show max-sm:mb-24">
                 <img
-                  src="src/assets/coffee-logo.png"
+                  src="src/assets/image/coffee-logo.png"
                   alt=""
                   className="transform transition-all max-sm:hidden my-2 w-12 h-12 lg:w-28 lg:h-28"
                 />
@@ -41,7 +41,7 @@ const HomePage = () => {
             </div>
           </section>
           <section className="my-8 flex box-border rounded-xl w-11/12 h-[18rem] mx-auto text-slate-100 bg-gray-700/75 lg:h-[30rem]">
-            <div className="relative w-6/12 h-full rounded-l-xl bg-cook-coffee bg-no-repeat bg-cover bg-center shadow-inner-rc p-show" />
+            <div className="relative w-6/12 h-full rounded-l-xl bg-[url('./assets/image/cook-coffee.jpg')] bg-no-repeat bg-cover bg-center shadow-inner-rc p-show" />
             <div className="bg-white/55 rounded-r-xl w-6/12 h-full flex justify-center items-center ">
               <p className="text-center w-8/12 text-sm lg:text-3xl font-bold tracking-widest text-appear ">
                 堅持自己烘焙，精心嚴選出最佳的咖啡豆。
@@ -54,7 +54,7 @@ const HomePage = () => {
                 遠離塵囂，休息獨處的地方。
               </p>
             </div>
-            <div className="w-6/12 h-full rounded-r-xl bg-enjoy-coffee bg-no-repeat bg-cover bg-center shadow-inner-lc p-show"></div>
+            <div className="w-6/12 h-full rounded-r-xl bg-[url('./assets/image/enjoy-coffee.jpg')] bg-no-repeat bg-cover bg-center shadow-inner-lc p-show"></div>
           </section>
           <section className="my-8 relative flex box-border rounded-xl w-11/12 h-auto mx-auto text-slate-100 bg-gray-700/75 ">
             <div className="bg-white/55 py-6 rounded-xl w-full h-full flex flex-col justify-start items-center">

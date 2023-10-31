@@ -35,13 +35,13 @@ const HistoryLeftSide = ({ ...props }) => {
           memberName={memberName}
           memberId={memberId}
         />
-        <div className=" box-border h-3/4 bg-gray-700/75 rounded-2xl">
+        <div className=" box-border h-3/4 rounded-2xl">
           <div className="rounded-t-xl bg-slate-100/95 h-8 w-full pl-4 ">
             <span className="text-slate-500 text-sm font-bold leading-8">
               過去訂單
             </span>
           </div>
-          <div className="h-96 overflow-y-auto pt-4">
+          <div className="h-96 bg-gray-700/75 overflow-y-auto pt-4 rounded-b-xl">
             {finishedData?.map((p, index) => {
               return <MemberPastCard key={index} value={{ p }} />;
             })}

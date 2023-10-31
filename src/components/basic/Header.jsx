@@ -41,7 +41,7 @@ const Header = () => {
             className="cursor-pointer flex  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:hidden"
           >
             <img
-              src="src/assets/coffee-logo.png"
+              src="src/assets/image/coffee-logo.png"
               alt=""
               className="w-6 h-6 mr-2"
             />

@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'paper-pattern': "url('src/assets/paper1920.jpg')",
-        'coffee-shop': "url('src/assets/coffee-shop.jpg')",
-        'cook-coffee': "url('src/assets/cook-coffee.jpg')",
-        'enjoy-coffee': "url('src/assets/enjoy-coffee.jpg')",
+        // 'paper-pattern': "url('src/assets/paper1920.jpg')",
+        // 'coffee-shop': "url('src/assets/coffee-shop.jpg')",
+        // 'cook-coffee': "url('src/assets/cook-coffee.jpg')",
+        // 'enjoy-coffee': "url('src/assets/enjoy-coffee.jpg')",
       },
       boxShadow: {
         'inner-b': 'inset -300px -200px 800px 0px #fff',
