@@ -31,4 +31,5 @@
 6. 預想停止，在終端機輸入以下指令
   `ctrl+c`
 ## Features 功能
-![coffe-shop](https://github.com/KFR1230/coffee-shop/assets/123913307/3966e7da-a2cf-4789-a1a0-c3d8005dc415)
+![coffe-shop (1)](https://github.com/KFR1230/coffee-shop/assets/123913307/c571014f-54cb-43bb-95fc-e1f8a7d8862d)
+
