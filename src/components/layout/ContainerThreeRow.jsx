@@ -17,7 +17,7 @@ const ContainerThreeRow = ({ children }) => {
   };
   const handleScrollUp = () => {
     top.current.scrollTo({
-      top: 20,
+      top: 0,
       behavior: 'smooth',
     });
   };
@@ -25,7 +25,7 @@ const ContainerThreeRow = ({ children }) => {
   return (
     <>
       <div
-        className="min-h-screen h-full container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] overflow-y-auto"
+        className="relative min-h-screen h-full container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] overflow-y-auto"
         onScroll={handleScroll}
         ref={top}
       >

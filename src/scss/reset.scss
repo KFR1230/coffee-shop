@@ -238,3 +238,13 @@ q:after {
   height: 100%;
   width: 100%;
 }
+header,
+footer {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 向下滾動時隱藏 */
+header.hidden,
+footer.hidden {
+  transform: translateY(-100%);
+}

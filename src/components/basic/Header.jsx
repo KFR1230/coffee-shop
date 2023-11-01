@@ -21,7 +21,7 @@ const Header = () => {
   }, [pathname]);
   return (
     <>
-      <header className="bg-yellow-900 fixed top-0 left-0 min-w-full z-20 sm:h-16">
+      <header className="bg-yellow-900 fixed top-0 min-w-full z-20 sm:h-16">
         <nav
           className="relative h-full mx-auto flex items-center justify-between p-2 max-sm:p-2 lg:px-8"
           aria-label="Global"

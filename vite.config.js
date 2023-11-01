@@ -11,7 +11,7 @@ export default defineConfig({
   base: '/coffee-shop/',
   resolve: {
     alias: {
-      // 將 src 目錄設置為絕對路徑
+      // 將 src設為絕對路徑
       '@': 'src',
     },
   },
