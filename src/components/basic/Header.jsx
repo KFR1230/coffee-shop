@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import BackToTopBtn from './BackToTopBtn';
 import HeaderModal from './HeaderModal';
-import coffeeLogo from '../../assets/image/coffee-logo.png';
+import coffeeLogo from '@/assets/image/coffee-logo.png';
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

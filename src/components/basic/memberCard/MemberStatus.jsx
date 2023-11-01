@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import coffeeLogo from '../../../assets/image/coffee-logo.png';
-import pencilEdit from '../../../assets/image/pencil.svg';
-import ballot from '../../../assets/image/ballot.svg';
-import assept from '../../../assets/image/assept-document.svg';
+import coffeeLogo from '@/assets/image/coffee-logo.png';
+import pencilEdit from '@/assets/image/pencil.svg';
+import ballot from '@/assets/image/ballot.svg';
+import assept from '@/assets/image/assept-document.svg';
 const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
   const navigate = useNavigate();
   return (

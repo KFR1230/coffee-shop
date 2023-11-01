@@ -5,7 +5,7 @@ import InfoModal from '../basic/InfoModal';
 import MenuButton from '../basic/MenuButton';
 import { useAuth } from '../context/AuthContext';
 import ContainerThreeRow from '../layout/ContainerThreeRow';
-import coffeeLogo from '../../assets/image/coffee-logo.png';
+import coffeeLogo from '@/assets/image/coffee-logo.png';
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(true);
   const { isAuthentic } = useAuth();

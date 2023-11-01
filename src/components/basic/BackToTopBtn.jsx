@@ -1,4 +1,4 @@
-import bactUpBtn from '../../assets/image/arrow-ios-upward-outline.svg';
+import bactUpBtn from '@/assets/image/arrow-ios-upward-outline.svg';
 const BackToTopBtn = ({ backToTopBtn, handleScrollUp }) => {
   // function handleScroll(e) {
   //   console.log(e.target);

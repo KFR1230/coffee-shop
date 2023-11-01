@@ -1,7 +1,7 @@
 import { Dialog } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import coffeeLogo from '../../assets/image/coffee-logo.png';
+import coffeeLogo from '@/assets/image/coffee-logo.png';
 const HeaderModal = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   return (
     <>

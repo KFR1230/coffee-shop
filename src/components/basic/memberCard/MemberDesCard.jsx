@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import copyId from '../../../assets/image/copy.svg';
-import coffeeLogo from '../../../assets/image/coffee-logo.png';
-import pencilEdit from '../../../assets/image/pencil.svg';
+import copyId from '@/assets/image/copy.svg';
+import coffeeLogo from '@/assets/image/coffee-logo.png';
+import pencilEdit from '@/assets/image/pencil.svg';
 const MemberDesCard = ({ memberName, memberAvatar, memberId }) => {
   const firstText = memberId.slice(0, 3);
   const navigate = useNavigate();

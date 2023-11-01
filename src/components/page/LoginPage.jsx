@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import coffeeLogo from '../../assets/image/coffee-logo.png';
+import coffeeLogo from '@/assets/image/coffee-logo.png';
 function LoginPage() {
   const emailRef = useRef();
   const passwordRef = useRef();
