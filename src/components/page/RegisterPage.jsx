@@ -124,7 +124,7 @@ function RegisterPage() {
                 className="font-semibold text-green-900 hover:text-green-700 w-auto text-end
                 self-end
                 "
-                to="/"
+                to="/login"
               >
                 登入
               </Link>

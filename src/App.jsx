@@ -19,7 +19,7 @@ function App() {
       <AuthProvider>
         <CartProvider>
           <Routes>
-            <Route path="*" element={<HomePage />}></Route>
+            <Route path="*" element={<LoginPage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
             <Route path="/register" element={<RegisterPage />}></Route>
             <Route path="/home" element={<HomePage />}></Route>
