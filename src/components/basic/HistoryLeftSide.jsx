@@ -1,5 +1,5 @@
 import { PulseLoader } from 'react-spinners';
-import MemberDesCard from './memberCard/memberDesCard';
+import MemberDesCard from './memberCard/MemberDesCard';
 import MemberPastCard from './memberCard/MemberPastCard';
 
 const HistoryLeftSide = ({ ...props }) => {
