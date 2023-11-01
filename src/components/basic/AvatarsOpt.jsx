@@ -18,7 +18,7 @@ const AvatarsOpt = ({ item, onClick }) => {
             item ||
             'https://cdn2.aprico-media.com/production/imgs/images/000/029/940/original.png?1553946576'
           }
-          alt=""
+          alt="member-avatar"
         />
       </button>
     </>

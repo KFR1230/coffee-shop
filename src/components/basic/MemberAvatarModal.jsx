@@ -50,7 +50,7 @@ const MemberAvatarModal = ({ isOpen, setIsOpen, onClick }) => {
                 
                 "
                 >
-                  <div className="flex   justify-start overflow-x-scroll pb-6">
+                  <div className="flex justify-start overflow-x-scroll pb-6">
                     {membersAvatar.map((item, i) => {
                       return (
                         <AvatarsOpt
