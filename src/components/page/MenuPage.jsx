@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MenuBeans from '../basic/MenuBeans';
-import MenuDessert from '../basic/menuDessert';
+import MenuDessert from '../basic/MenuDessert';
 import MenuDrink from '../basic/menuDrink';
 import { useAuth } from '../context/AuthContext';
 import ContainerThreeRow from '../layout/ContainerThreeRow';
