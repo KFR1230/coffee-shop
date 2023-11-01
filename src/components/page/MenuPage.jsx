@@ -35,7 +35,7 @@ function MenuPage() {
   }, [navigate, isAuthentic]);
   return (
     <ContainerThreeRow>
-      <div className="relative bg-transparent pt-10">
+      <div className="relative bg-transparent pt-10 ">
         <div className=" w-m-full my-2.5 h-24 sm:h-36  flex flex-col justify-center items-center">
           <h1 className="transform transition-all pb-4 text-3xl sm:text-5xl font-Dosis font-extrabold italic text-center tracking-[.15em]">
             Menu
@@ -63,7 +63,7 @@ function MenuPage() {
         </div>
       </div>
       {/* 變更商品 */}
-      <div className=" pb-4">
+      <div className=" pb-16">
         <div className="mb-2 pb-2 transform transition-all text-slate-100 bg-gray-600/75 mx-6 my-4 rounded-2xl lg:w-4/5 lg:mx-auto">
           <ProductLayout
             title={title}
