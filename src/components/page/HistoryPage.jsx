@@ -12,7 +12,7 @@ import HistoryRightSide from '../basic/HistoryRightSide';
 import { ToastContainer, toast } from 'react-toastify';
 import { Flip } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import MemberStatus from '../basic/memberCard/Memberstatus';
+import MemberStatus from '../basic/memberCard/MemberStatus';
 import { useAuth } from '../context/AuthContext';
 import ContainerTwoRow from '../layout/ContainerTwoRow';
 

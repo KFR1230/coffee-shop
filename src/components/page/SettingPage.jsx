@@ -7,7 +7,7 @@ import TextareaTai from '../basic/TextareaTai';
 import { useAuth } from '../context/AuthContext';
 import ContainerTwoRow from '../layout/ContainerTwoRow';
 import 'react-loading-skeleton/dist/skeleton.css';
-import MemberAvatarModal from '../basic/memberAvatarModal';
+import MemberAvatarModal from '../basic/MemberAvatarModal';
 import { useNavigate } from 'react-router-dom';
 function SettingPage() {
   const [memberName, setMemberName] = useState('匿名');
