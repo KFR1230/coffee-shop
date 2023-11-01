@@ -12,14 +12,14 @@ import HomePage from './components/page/HomePage';
 import HistoryPage from './components/page/HistoryPage';
 
 function App() {
-  const basename = import.meta.env.VITE_REACT_APP_PUBLIC_URL;
+  const basename = import.meta.env.PUBLIC_URL;
 
   return (
     <BrowserRouter basename={basename}>
       <AuthProvider>
         <CartProvider>
           <Routes>
-            <Route exact path="/" element={<LoginPage />}></Route>
+            <Route path="*" element={<HomePage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
             <Route path="/register" element={<RegisterPage />}></Route>
             <Route path="/home" element={<HomePage />}></Route>

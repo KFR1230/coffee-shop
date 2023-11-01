@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1500,
+    outDir: 'dist', // 指定輸出目錄為 'dist'
   },
   base: '/coffee-shop/',
 });
