@@ -8,5 +8,10 @@ export default defineConfig({
     chunkSizeWarningLimit: 1500,
     outDir: 'dist', // 指定輸出目錄為 'dist'
   },
-  base: '/coffee-shop/',
+  resolve: {
+    alias: {
+      // 將 src 目錄設置為絕對路徑
+      '@': '/src',
+    },
+  },
 });

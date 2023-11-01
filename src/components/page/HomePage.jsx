@@ -18,7 +18,7 @@ const HomePage = () => {
   return (
     <>
       <ContainerThreeRow>
-        <div className="h-auto w-full py-16 sm:py-20 lg:py-0">
+        <div className=" w-full pt-16 sm:pt-20 lg:py-0">
           <section className="relative flex box-border rounded-xl w-11/12 h-96 justify-between sm:h-[28rem]  lg:h-screen mx-auto bg-white max-sm:flex-col">
             <div
               className="transform transition-all flex justify-center

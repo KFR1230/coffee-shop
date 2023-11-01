@@ -13,7 +13,7 @@ const MemberDesCard = ({ memberName, memberAvatar, memberId }) => {
           <div className="w-full flex justify-between mb-2">
             <img
               src={
-                memberAvatar ? `${memberAvatar}` : 'src/assets/coffee-logo.png'
+                memberAvatar ? `${memberAvatar}` : './assets/coffee-logo.png'
               }
               alt="member-avatar"
               className="w-12 h-12 mx-2 rounded-full"
