@@ -11,7 +11,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // 將 src 目錄設置為絕對路徑
-      '@': '/src',
+      '@': 'src',
     },
   },
 });

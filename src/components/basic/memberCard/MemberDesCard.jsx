@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-
+import copyId from '../../../assets/image/copy.svg';
+import coffeeLogo from '../../../assets/image/coffee-logo.png';
+import pencilEdit from '../../../assets/image/pencil.svg';
 const MemberDesCard = ({ memberName, memberAvatar, memberId }) => {
   const firstText = memberId.slice(0, 3);
   const navigate = useNavigate();
@@ -12,14 +14,12 @@ const MemberDesCard = ({ memberName, memberAvatar, memberId }) => {
         <div className="flex flex-col justify-start items-start p-2 w-full h-full rounded-t-2xl  text-slate-500 font-bold text-lg line-clamp-1 ">
           <div className="w-full flex justify-between mb-2">
             <img
-              src={
-                memberAvatar ? `${memberAvatar}` : './assets/coffee-logo.png'
-              }
+              src={memberAvatar ? `${memberAvatar}` : coffeeLogo}
               alt="member-avatar"
               className="w-12 h-12 mx-2 rounded-full"
             />
             <img
-              src="src/assets/image/pencil.svg"
+              src={pencilEdit}
               alt="edit-member"
               className="w-4 h-4 filter-gray cursor-pointer "
               onClick={() => navigate('/setting')}
@@ -36,7 +36,7 @@ const MemberDesCard = ({ memberName, memberAvatar, memberId }) => {
             >
               {' '}
               <img
-                src="src/assets/image/copy.svg"
+                src={copyId}
                 alt="memberId-Copy"
                 className="w-2 h-2 mr-1 filter-gray"
               />

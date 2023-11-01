@@ -1,7 +1,7 @@
 import { Dialog } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-
+import coffeeLogo from '../../assets/image/coffee-logo.png';
 const HeaderModal = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   return (
     <>
@@ -16,11 +16,7 @@ const HeaderModal = ({ mobileMenuOpen, setMobileMenuOpen }) => {
           <div className="flex flex-row-reverse items-center justify-between">
             <Link to={'/home'} className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="src/assets/image/coffee-logo.png"
-                alt=""
-              />
+              <img className="h-8 w-auto" src={coffeeLogo} alt="coffee-logo" />
             </Link>
             <button
               type="button"

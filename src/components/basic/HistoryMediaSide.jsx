@@ -20,7 +20,7 @@ const HistoryMediaSide = ({ ...props }) => {
   }
   return (
     <>
-      <section className="sm:hidden mt-4 h-full w-full md:w-2/3 flex flex-col justify-center items-end  md:h-full  rounded-2xl bg-gray-700/75">
+      <section className="sm:hidden mt-4 h-full w-full md:w-2/3 flex flex-col justify-center items-end  md:h-full  rounded-2xl ">
         <div className="rounded-t-2xl bg-slate-100 h-8 w-full pl-4">
           <span className="text-slate-500 text-sm font-bold leading-8">
             {statusTitle}

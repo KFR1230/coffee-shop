@@ -1,5 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-
+import coffeeLogo from '../../../assets/image/coffee-logo.png';
+import pencilEdit from '../../../assets/image/pencil.svg';
+import ballot from '../../../assets/image/ballot.svg';
+import assept from '../../../assets/image/assept-document.svg';
 const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
   const navigate = useNavigate();
   return (
@@ -9,11 +12,7 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
           <div className="flex items-center justify-between p-2 w-full rounded-t-2xl bg-slate-100 text-slate-500 font-bold text-lg line-clamp-1 ">
             <div className="flex">
               <img
-                src={
-                  memberAvatar
-                    ? `${memberAvatar}`
-                    : 'src/assets/image/coffee-logo.png'
-                }
+                src={memberAvatar ? `${memberAvatar}` : coffeeLogo}
                 alt="member-avatar"
                 className="w-6 h-6 mx-2 rounded-full"
               />
@@ -24,7 +23,7 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
             </div>
 
             <img
-              src="src/assets/image/pencil.svg"
+              src={pencilEdit}
               alt="edit-member"
               className="w-4 h-4 filter-gray cursor-pointer"
               onClick={() => navigate('/setting')}
@@ -37,8 +36,8 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
                 onClick={() => onClick?.('目前訂單')}
               >
                 <img
-                  src="src/assets/image/ballot.svg"
-                  alt=""
+                  src={ballot}
+                  alt="current-list"
                   className="w-6 h-6 sm:w-8 sm:h-8 mx-auto filter-white"
                 />
               </button>
@@ -53,8 +52,8 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
                 onClick={() => onClick?.('過去訂單')}
               >
                 <img
-                  src="src/assets/image/assept-document.svg"
-                  alt=""
+                  src={assept}
+                  alt="past-list"
                   className="w-6 h-6 sm:w-8 sm:h-8 mx-auto filter-white"
                 />
               </button>

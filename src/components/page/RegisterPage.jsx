@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import coffeeLogo from '../../assets/image/coffee-logo.png';
 function RegisterPage() {
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -58,7 +58,7 @@ function RegisterPage() {
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-14 w-auto"
-            src="src/assets/image/coffee-logo.png"
+            src={coffeeLogo}
             alt="Your Company"
           />
           <h2 className="mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">

@@ -5,7 +5,7 @@ import InfoModal from '../basic/InfoModal';
 import MenuButton from '../basic/MenuButton';
 import { useAuth } from '../context/AuthContext';
 import ContainerThreeRow from '../layout/ContainerThreeRow';
-
+import coffeeLogo from '../../assets/image/coffee-logo.png';
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(true);
   const { isAuthentic } = useAuth();
@@ -26,7 +26,7 @@ const HomePage = () => {
             >
               <div className="flex flex-col justify-center items-center show max-sm:mb-24">
                 <img
-                  src="src/assets/image/coffee-logo.png"
+                  src={coffeeLogo}
                   alt=""
                   className="transform transition-all max-sm:hidden my-2 w-12 h-12 lg:w-28 lg:h-28"
                 />

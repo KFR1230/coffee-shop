@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import BackToTopBtn from './BackToTopBtn';
 import HeaderModal from './HeaderModal';
-
+import coffeeLogo from '../../assets/image/coffee-logo.png';
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -40,11 +40,7 @@ const Header = () => {
             to={'/home'}
             className="cursor-pointer flex  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:hidden"
           >
-            <img
-              src="src/assets/image/coffee-logo.png"
-              alt=""
-              className="w-6 h-6 mr-2"
-            />
+            <img src={coffeeLogo} alt="coffee-logo" className="w-6 h-6 mr-2" />
             <span className="text-slate-300 font-bold">慢活咖啡</span>
           </Link>
           <HeaderModal
