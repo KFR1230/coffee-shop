@@ -7,4 +7,5 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1500,
   },
+  base: '/vite-coffee-shop',
 });
