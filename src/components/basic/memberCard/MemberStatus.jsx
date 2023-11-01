@@ -37,7 +37,7 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
                 onClick={() => onClick?.('目前訂單')}
               >
                 <img
-                  src="src/assets/ballot.svg"
+                  src="src/assets/image/ballot.svg"
                   alt=""
                   className="w-6 h-6 sm:w-8 sm:h-8 mx-auto filter-white"
                 />

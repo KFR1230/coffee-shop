@@ -36,7 +36,7 @@ const MemberDesCard = ({ memberName, memberAvatar, memberId }) => {
             >
               {' '}
               <img
-                src="src/assets/copy.svg"
+                src="src/assets/image/copy.svg"
                 alt="memberId-Copy"
                 className="w-2 h-2 mr-1 filter-gray"
               />

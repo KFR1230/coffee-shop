@@ -12,8 +12,10 @@ import HomePage from './components/page/HomePage';
 import HistoryPage from './components/page/HistoryPage';
 
 function App() {
+  const basename = import.meta.env.VITE_REACT_APP_PUBLIC_URL;
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <AuthProvider>
         <CartProvider>
           <Routes>

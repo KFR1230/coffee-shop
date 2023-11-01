@@ -18,7 +18,7 @@ const HeaderModal = ({ mobileMenuOpen, setMobileMenuOpen }) => {
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src="src/assets/coffee-logo.png"
+                src="src/assets/image/coffee-logo.png"
                 alt=""
               />
             </Link>
