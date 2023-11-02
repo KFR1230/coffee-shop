@@ -16,7 +16,7 @@ const CartPage = () => {
   const [index, setIndex] = useState(null);
   const [total, setTotal] = useState(0);
   const { setHaveProducts } = useCart();
-  const { memberId, isAuthentic } = useAuth();
+  const { memberId } = useAuth();
   const pathname = useLocation();
   const navigate = useNavigate();
   function totalPrice() {
@@ -108,12 +108,6 @@ const CartPage = () => {
     setIsLoading(false);
     setHaveProducts(false);
   }, [pathname, isZero]);
-
-  useEffect(() => {
-    if (!isAuthentic) {
-      navigate('/login');
-    }
-  }, [navigate, isAuthentic]);
 
   return (
     <>

@@ -3,18 +3,11 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import InfoModal from '../basic/InfoModal';
 import MenuButton from '../basic/MenuButton';
-import { useAuth } from '../context/AuthContext';
 import ContainerThreeRow from '../layout/ContainerThreeRow';
 import coffeeLogo from '@/assets/image/coffee-logo.png';
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const { isAuthentic } = useAuth();
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (!isAuthentic) {
-      navigate('/login');
-    }
-  }, [navigate, isAuthentic]);
+
   return (
     <>
       <ContainerThreeRow>

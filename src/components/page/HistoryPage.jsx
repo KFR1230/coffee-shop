@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import {
   changeFinishedStatus,
   getCurrentMemberData,
@@ -17,7 +16,7 @@ import { useAuth } from '../context/AuthContext';
 import ContainerTwoRow from '../layout/ContainerTwoRow';
 
 const HistoryPage = () => {
-  const { memberId, isAuthentic } = useAuth();
+  const { memberId } = useAuth();
   const [unFinishedProducts, setUnFinishedProducts] = useState([]);
   const [finalProducts, setFinalProducts] = useState([]);
   const [finishedData, setFinishedData] = useState([]);
@@ -27,7 +26,6 @@ const HistoryPage = () => {
   const [statusTitle, setStatusTitle] = useState('目前訂單');
   const [memberAvatar, setMemberAvatar] = useState(null);
   const [memberName, setMemberName] = useState('');
-  const navigate = useNavigate();
   const totalPrice = (arr) => {
     return arr.reduce((acc, curr) => {
       return (acc += curr.price * curr.count);
@@ -105,11 +103,7 @@ const HistoryPage = () => {
     };
     getMemberData();
   }, [memberId]);
-  useEffect(() => {
-    if (!isAuthentic) {
-      navigate('/login');
-    }
-  }, [navigate, isAuthentic]);
+
   return (
     <>
       <ContainerTwoRow>

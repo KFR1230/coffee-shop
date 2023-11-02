@@ -1,10 +1,7 @@
-import { useEffect } from 'react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import MenuBeans from '../basic/MenuBeans';
 import MenuDessert from '../basic/MenuDessert';
 import MenuDrink from '../basic/MenuDrink';
-import { useAuth } from '../context/AuthContext';
 import ContainerThreeRow from '../layout/ContainerThreeRow';
 import ProductLayout from '../layout/ProductLayout';
 import { ToastContainer, toast } from 'react-toastify';
@@ -14,8 +11,6 @@ function MenuPage() {
   const [changeMode, setChangeMode] = useState('Drink');
   const [title, setTitle] = useState('Drink'); //藉由title變更components
   const [subTitle, setSubTitle] = useState('');
-  const { isAuthentic } = useAuth();
-  const navigate = useNavigate();
   const handlerChangeMode = (name) => {
     setChangeMode(name);
     setTitle(name);
@@ -28,11 +23,6 @@ function MenuPage() {
   const notifyProduct = (name) => {
     toast(`已加入${name}至購物車`);
   };
-  useEffect(() => {
-    if (!isAuthentic) {
-      navigate('/login');
-    }
-  }, [navigate, isAuthentic]);
   return (
     <ContainerThreeRow>
       <div className="relative bg-transparent pt-10 ">

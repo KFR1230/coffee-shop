@@ -15,8 +15,9 @@ function SettingPage() {
   const [memberAvatar, setMemberAvatar] = useState(null);
   let [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const { memberId, isAuthentic } = useAuth();
   const navigate = useNavigate();
+  const { memberId } = useAuth();
+
   function handlerEdit() {
     editMemberData({ memberName, memberDescription, memberAvatar, memberId });
   }
@@ -29,11 +30,6 @@ function SettingPage() {
     setMemberAvatar(item);
     setIsOpen(false);
   }
-  useEffect(() => {
-    if (!isAuthentic) {
-      navigate('/login');
-    }
-  }, [navigate, isAuthentic]);
 
   useEffect(() => {
     setIsLoading(true);

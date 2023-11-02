@@ -1,16 +1,15 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import coffeeLogo from '@/assets/image/coffee-logo.png';
-import paper from '@/assets/image/paper1920.jpg';
+
 function LoginPage() {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const emailRef = useRef();
   const passwordRef = useRef();
   const navigate = useNavigate();
-  const { login, isAuthentic } = useAuth();
+  const { login, isAuthentic, isImageLoaded } = useAuth();
   const notify = (message) =>
     toast.error(`${message}`, {
       position: 'top-right',
@@ -48,20 +47,6 @@ function LoginPage() {
       navigate('/home');
     }
   }, [navigate, isAuthentic]);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = `${paper}`;
-    if (img.complete) {
-      console.log('img.complete', img);
-      setIsImageLoaded(true);
-    } else {
-      img.onload = () => {
-        setIsImageLoaded(true);
-        console.log('img.onload', img);
-      };
-    }
-  }, []);
   return (
     <>
       <div

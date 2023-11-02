@@ -10,6 +10,7 @@ import { useLocation } from 'react-router-dom';
 import { auth } from '../../utils/firebase';
 import jwt_decode from 'jwt-decode';
 import { editMemberData } from '../../api/data';
+import useImgLoading from '../hooks/useImgLoading';
 const defaultAuthContext = {
   isAuthentic: false,
   currentMember: null,
@@ -20,6 +21,7 @@ export const useAuth = () => useContext(AuthContext);
 export const AuthProvider = ({ children }) => {
   const [memberId, setMemberId] = useState('');
   const [isAuthentic, setIsAuthentic] = useState(false);
+  const { isImageLoaded } = useImgLoading();
   const { pathname } = useLocation();
   useEffect(() => {
     const checkTokenisValid = async () => {
@@ -44,6 +46,7 @@ export const AuthProvider = ({ children }) => {
       value={{
         isAuthentic,
         memberId,
+        isImageLoaded,
         login: async (email, password) => {
           try {
             const res = await signInWithEmailAndPassword(auth, email, password);
