@@ -31,28 +31,6 @@ const ProductModal = ({ onClick }) => {
   const [currentCount, setCurrentCount] = useState(1);
   const { cartModal, setCartModal, productModal, setHaveProducts } = useCart();
 
-  const temp = productModal.isHot
-    ? [
-        { name: '冰', inStock: true },
-        { name: '溫', inStock: true },
-        { name: '熱', inStock: true },
-      ]
-    : [
-        { name: '冰', inStock: true },
-        { name: '溫', inStock: true },
-        { name: '熱', inStock: false },
-      ];
-  const sweet = productModal.isSweet
-    ? [
-        { name: '無糖', class: '', inStock: true },
-        { name: '微糖', class: '', inStock: true },
-        { name: '正常', class: '', inStock: true },
-      ]
-    : [
-        { name: '無糖', class: '', inStock: true },
-        { name: '微糖', class: '', inStock: false },
-        { name: '正常', class: '', inStock: false },
-      ];
   function handlerAddInCart(name, price, sweet, temp, count) {
     let cartProducts = localStorage.getItem('cart-products')
       ? JSON.parse(localStorage.getItem('cart-products'))
@@ -77,6 +55,31 @@ const ProductModal = ({ onClick }) => {
 
   useEffect(() => {
     if (productModal.isHot || productModal.isSweet) {
+      let temp =
+        productModal.isHot === true
+          ? [
+              { name: '冰', inStock: true },
+              { name: '溫', inStock: true },
+              { name: '熱', inStock: true },
+            ]
+          : [
+              { name: '冰', inStock: true },
+              { name: '溫', inStock: true },
+              { name: '熱', inStock: false },
+            ];
+      let sweet =
+        productModal.isSweet === true
+          ? [
+              { name: '無糖', class: '', inStock: true },
+              { name: '微糖', class: '', inStock: true },
+              { name: '正常', class: '', inStock: true },
+            ]
+          : [
+              { name: '無糖', class: '', inStock: true },
+              { name: '微糖', class: '', inStock: false },
+              { name: '正常', class: '', inStock: false },
+            ];
+
       setProduct({ ...productModal, temp, sweet });
       setSelectedSweet(product.sweet[0].name);
       setSelectedTemp(product.temp[0].name);

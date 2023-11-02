@@ -5,7 +5,7 @@ import { db } from '../../utils/firebase';
 
 function Topics({ currentMember }) {
   const [current, setCurrent] = useState({});
-  console.log('1', currentMember);
+
   useEffect(() => {
     const getData = async () => {
       try {

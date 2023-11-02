@@ -25,7 +25,7 @@ const AdminDessertPage = () => {
         url: res,
       };
       await addDR(obj);
-      console.log('完成');
+      // console.log('完成');
     } catch (error) {
       console.log(error);
     }
