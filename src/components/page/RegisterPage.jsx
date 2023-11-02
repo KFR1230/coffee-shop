@@ -1,10 +1,12 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import coffeeLogo from '@/assets/image/coffee-logo.png';
+import paper from '@/assets/image/paper1920.jpg';
 function RegisterPage() {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const emailRef = useRef();
   const passwordRef = useRef();
   const navigate = useNavigate();
@@ -52,9 +54,28 @@ function RegisterPage() {
       navigate('/home');
     }
   }, [navigate, isAuthentic]);
+  useEffect(() => {
+    const img = new Image();
+    img.src = `${paper}`;
+    if (img.complete) {
+      console.log('img.complete', img);
+      setIsImageLoaded(true);
+    } else {
+      img.onload = () => {
+        setIsImageLoaded(true);
+        console.log('img.onload', img);
+      };
+    }
+  }, []);
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col px-6 py-12 lg:px-8 overflow-y-auto h-16 bg-[url('./assets/image/paper1920.jpg')]">
+      <div
+        className={
+          isImageLoaded
+            ? `flex min-h-full flex-1 flex-col px-6 py-12 lg:px-8 overflow-y-auto h-16 bg-[url(@/assets/image/paper1920.jpg)]`
+            : `flex min-h-full flex-1 flex-col px-6 py-12 lg:px-8 overflow-y-auto h-16 bg-[#d6b892]`
+        }
+      >
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-14 w-auto"

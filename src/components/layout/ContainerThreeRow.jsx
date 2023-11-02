@@ -1,11 +1,12 @@
 import Header from '../basic/Header';
 import Footer from '../basic/Footer';
 import BackToTopBtn from '../basic/BackToTopBtn';
-import { useRef, useState } from 'react';
-
+import { useEffect, useRef, useState } from 'react';
+import paper from '@/assets/image/paper1920.jpg';
 const ContainerThreeRow = ({ children }) => {
   const [scroll, setScroll] = useState(0);
   const [backToTopBtn, setBackToTopBtn] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const top = useRef();
   const handleScroll = (e) => {
     setScroll(e.currentTarget.scrollTop);
@@ -22,10 +23,28 @@ const ContainerThreeRow = ({ children }) => {
     });
   };
 
+  useEffect(() => {
+    const img = new Image();
+    img.src = `${paper}`;
+    if (img.complete) {
+      console.log('img.complete', img);
+      setIsImageLoaded(true);
+    } else {
+      img.onload = () => {
+        setIsImageLoaded(true);
+        console.log('img.onload', img);
+      };
+    }
+  }, []);
+
   return (
     <>
       <div
-        className="relative min-h-screen h-full container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] overflow-y-auto"
+        className={
+          isImageLoaded
+            ? "relative min-h-screen h-full container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] overflow-y-auto"
+            : 'relative min-h-screen h-full container-row flex flex-col bg-[#d6b892] overflow-y-auto'
+        }
         onScroll={handleScroll}
         ref={top}
       >
