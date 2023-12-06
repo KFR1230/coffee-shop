@@ -10,8 +10,8 @@ const MemberDesCard = ({ memberName, memberAvatar, memberId }) => {
   };
   return (
     <>
-      <div className="box-border h-1/4 mb-4 flex justify-center items-center bg-slate-100/75  p-2 rounded-2xl border-gray">
-        <div className="flex flex-col justify-start items-start p-2 w-full h-full rounded-t-2xl  text-slate-500 font-bold text-lg line-clamp-1 ">
+      <div className="box-border h-auto mb-4 flex justify-center items-center bg-slate-100/75  p-2 rounded-2xl border-gray">
+        <div className="flex flex-col justify-start items-start w-full h-full rounded-t-2xl  text-slate-500 font-bold text-lg line-clamp-1 ">
           <div className="w-full flex justify-between mb-2">
             <img
               src={memberAvatar ? `${memberAvatar}` : coffeeLogo}

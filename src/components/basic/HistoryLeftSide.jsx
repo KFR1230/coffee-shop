@@ -29,19 +29,19 @@ const HistoryLeftSide = ({ ...props }) => {
   }
   return (
     <>
-      <section className="max-sm:hidden w-1/3 flex flex-col justify-between  h-full mr-4 ">
+      <section className="max-sm:hidden w-1/3 flex flex-col justify-start  h-full mr-4 ">
         <MemberDesCard
           memberAvatar={memberAvatar}
           memberName={memberName}
           memberId={memberId}
         />
-        <div className=" box-border h-3/4 rounded-2xl">
+        <div className=" box-border h-[calc(75%-2rem)] rounded-2xl">
           <div className="rounded-t-xl bg-slate-100/95 h-8 w-full pl-4 ">
             <span className="text-slate-500 text-sm font-bold leading-8">
               過去訂單
             </span>
           </div>
-          <div className="h-96 bg-gray-700/75 overflow-y-auto pt-4 rounded-b-xl">
+          <div className="h-[calc(100%-2rem)] bg-gray-700/75 overflow-y-auto pt-4 rounded-b-xl">
             {finishedData?.map((p, index) => {
               return <MemberPastCard key={index} value={{ p }} />;
             })}

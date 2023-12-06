@@ -107,7 +107,7 @@ const HistoryPage = () => {
   return (
     <>
       <ContainerTwoRow>
-        <div className="box-border flex max-sm:flex-col max-sm:justify-between mt-16 mb-6 sm:mt-20 w-11/12 h-full rounded-2xl mx-auto ">
+        <div className="box-border flex max-sm:flex-col max-sm:justify-between pt-16 pb-6 sm:pt-20 w-11/12 h-full rounded-2xl mx-auto ">
           <HistoryLeftSide
             value={{
               isLeftLoading,
@@ -130,7 +130,7 @@ const HistoryPage = () => {
           media RWD
           ///
           */}
-          <div className="h-1/4">
+          <div className="h-1/4 mb-4">
             <MemberStatus
               memberName={memberName}
               memberAvatar={memberAvatar}

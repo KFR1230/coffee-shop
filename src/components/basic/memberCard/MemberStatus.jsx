@@ -7,7 +7,7 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="sm:hidden box-border h-full mb-4 flex bg-gray-700/75 rounded-2xl">
+      <div className="sm:hidden box-border h-full flex bg-gray-700/75 rounded-2xl">
         <div className="w-full flex flex-col items-start justify-start sm:h-full sm:w-2/3">
           <div className="flex items-center justify-between p-2 w-full rounded-t-2xl bg-slate-100 text-slate-500 font-bold text-lg line-clamp-1 ">
             <div className="flex">
