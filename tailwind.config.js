@@ -2,6 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      sm: '638px',
+      md: '976px',
+      lg: '1440px',
+    },
     extend: {
       backgroundImage: {
         // 'paper-pattern': "url('src/assets/paper1920.jpg')",

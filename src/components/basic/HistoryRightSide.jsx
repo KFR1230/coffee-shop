@@ -5,7 +5,7 @@ const HistoryRightSide = ({ ...props }) => {
   const { finalProducts, total, handleFinished, isRightLoading } = props.value;
   if (isRightLoading) {
     return (
-      <div className="w-2/3 h-full rounded-xl bg-gray-700/75 hidden mt-4  sm:flex justify-center items-center md:h-full py-4 px-4 ">
+      <div className="w-2/3 h-full rounded-xl bg-gray-700/75 hidden sm:flex justify-center items-center md:h-full py-4 px-4 ">
         <PulseLoader color="#c1b738" loading speedMultiplier={1} />
       </div>
     );
