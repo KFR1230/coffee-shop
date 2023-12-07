@@ -12,7 +12,7 @@ import HomePage from './components/page/HomePage';
 import HistoryPage from './components/page/HistoryPage';
 
 function App() {
-  const basename = import.meta.env.PUBLIC_URL;
+  const basename = import.meta.env.PUBLIC_URL ? '/' : '/coffee-shop/';
 
   return (
     <BrowserRouter basename={basename}>
