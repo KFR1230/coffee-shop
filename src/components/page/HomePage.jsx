@@ -11,8 +11,8 @@ const HomePage = () => {
   return (
     <>
       <ContainerThreeRow>
-        <div className=" w-full pt-16 pb-20 sm:pt-20 lg:py-0">
-          <section className="relative flex box-border rounded-xl w-11/12 h-96 justify-between sm:h-[28rem]  lg:h-screen mx-auto bg-white max-sm:flex-col">
+        <div className=" w-full lg:py-0">
+          <section className="relative  flex box-border rounded-xl w-11/12 h-96 justify-between sm:h-[28rem]  lg:h-screen mx-auto bg-white max-sm:flex-col">
             <div
               className="transform transition-all flex justify-center
             items-end sm:justify-end sm:items-center box-border  rounded-xl w-full bg-[url('./assets/image/coffee-shop.jpg')] bg-no-repeat bg-cover bg-center shadow-inner-mb h-full sm:shadow-inner-b"

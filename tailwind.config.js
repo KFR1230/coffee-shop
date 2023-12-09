@@ -24,6 +24,9 @@ export default {
       fontFamily: {
         Dosis: ['Dosis', 'cursive'],
       },
+      height: {
+        svh: '100svh',
+      },
     },
   },
   plugins: [],

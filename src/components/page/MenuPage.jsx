@@ -25,7 +25,7 @@ function MenuPage() {
   };
   return (
     <ContainerThreeRow>
-      <div className="relative bg-transparent pt-10 ">
+      <div className="relative bg-transparent ">
         <div className=" w-m-full my-2.5 h-24 sm:h-36  flex flex-col justify-center items-center">
           <h1 className="transform transition-all pb-4 text-3xl sm:text-5xl font-Dosis font-extrabold italic text-center tracking-[.15em]">
             Menu

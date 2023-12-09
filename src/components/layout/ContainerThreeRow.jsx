@@ -36,8 +36,8 @@ const ContainerThreeRow = ({ children }) => {
       <div
         className={
           isImageLoaded
-            ? "relative min-h-screen h-full container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] overflow-y-auto"
-            : 'relative min-h-screen h-full container-row flex flex-col bg-[#d6b892] overflow-y-auto'
+            ? "relative h-svh container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] overflow-y-auto pt-16 sm:pt-20"
+            : 'relative h-svh container-row flex flex-col bg-[#d6b892] overflow-y-auto pt-16 sm:pt-20'
         }
         onScroll={handleScroll}
         ref={top}
