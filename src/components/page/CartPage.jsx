@@ -109,6 +109,8 @@ const CartPage = () => {
     setHaveProducts(false);
   }, [pathname, isZero]);
 
+  //為什麼會在點擊 - 時，數量會閃一下，原因就是出自於這裡。isZero 的變化觸發重新取得 local storage 的資料，在local storage 的數值尚未被變更，因此可以使該值維持在1。
+
   return (
     <>
       <ContainerThreeRow>
