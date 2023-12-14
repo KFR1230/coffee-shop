@@ -130,7 +130,7 @@ const HistoryPage = () => {
           media RWD
           ///
           */}
-          <div className="h-3/5 mb-4">
+          <div className="h-2/5 mb-4">
             <MemberStatus
               memberName={memberName}
               memberAvatar={memberAvatar}
