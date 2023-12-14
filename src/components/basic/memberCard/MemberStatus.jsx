@@ -29,7 +29,7 @@ const MemberStatus = ({ memberName, memberAvatar, onClick }) => {
               onClick={() => navigate('/setting')}
             />
           </div>
-          <div className="h-full w-full flex justify-evenly items-center">
+          <div className="h-full w-full  pt-2 flex justify-evenly items-center">
             <div className="flex flex-col items-center">
               <button
                 className="w-8 h-8 rounded sm:w-12 sm:h-12 bg-slate-100 sm:rounded-xl hover:bg-slate-500"

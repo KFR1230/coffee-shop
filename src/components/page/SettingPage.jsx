@@ -8,7 +8,9 @@ import { useAuth } from '../context/AuthContext';
 import ContainerTwoRow from '../layout/ContainerTwoRow';
 import 'react-loading-skeleton/dist/skeleton.css';
 import MemberAvatarModal from '../basic/MemberAvatarModal';
+// import { auth } from '../../utils/firebase';
 import { useNavigate } from 'react-router-dom';
+// import { onAuthStateChanged } from 'firebase/auth';
 function SettingPage() {
   const [memberName, setMemberName] = useState('匿名');
   const [memberDescription, setMemberDescription] = useState('');
@@ -17,7 +19,7 @@ function SettingPage() {
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   const { memberId } = useAuth();
-
+  // const [user, setUser] = useState('');
   function handlerEdit() {
     editMemberData({ memberName, memberDescription, memberAvatar, memberId });
   }
@@ -30,6 +32,13 @@ function SettingPage() {
     setMemberAvatar(item);
     setIsOpen(false);
   }
+
+  // useEffect(() => {
+  //   onAuthStateChanged(auth, (currentUser) => {
+  //     // console.log(currentUser);
+  //     setUser(currentUser);
+  //   });
+  // }, []); //firebase 有提供監聽目前上線的用戶資訊
 
   useEffect(() => {
     setIsLoading(true);
@@ -56,7 +65,7 @@ function SettingPage() {
     <>
       <ContainerTwoRow>
         <form
-          className="md:w-6/12 md:mx-auto flex justify-start min-h-full flex-1 flex-col px-6 py-16 sm:py-24 lg:px-8  max-h-screen"
+          className="md:w-6/12 md:mx-auto h-auto flex justify-start flex-1 flex-col px-6 py-16 sm:py-24 lg:px-8  "
           method="POST"
           onSubmit={(e) => {
             handlerEdit();

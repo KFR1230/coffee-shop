@@ -35,8 +35,8 @@ const ContainerTwoRow = ({ children }) => {
       <div
         className={
           isImageLoaded
-            ? "overflow-y-auto container-row flex flex-col h-full min-h-screen justify-between bg-[url('./assets/image/paper1920.jpg')]"
-            : 'overflow-y-auto container-row flex flex-col h-full min-h-screen justify-between bg-[#d6b892]'
+            ? "overflow-y-auto container-row flex flex-col h-svh justify-between bg-[url('./assets/image/paper1920.jpg')]"
+            : 'overflow-y-auto container-row flex flex-col h-svh justify-between bg-[#d6b892]'
         }
         onScroll={handleScroll}
         ref={top}
