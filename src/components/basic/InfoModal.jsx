@@ -5,7 +5,7 @@ const InfoModal = ({ isOpen, setIsOpen }) => {
   return (
     <>
       <Transition appear show={isOpen} as="div">
-        <Dialog as="div" className="relative z-30" onClose={setIsOpen}>
+        <Dialog as="div" className="relative z-[40]" onClose={setIsOpen}>
           <Transition.Child
             as="div"
             enter="ease-out duration-300"
