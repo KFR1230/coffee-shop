@@ -114,7 +114,7 @@ const CartPage = () => {
   return (
     <>
       <ContainerThreeRow>
-        <div className="w-full h-full relative bg-transparent py-16 sm:py-24 overflow-y-auto">
+        <div className="w-full h-auto relative bg-transparent pb-16 sm:pb-24 ">
           <div className="transform transition-all w-4/5 lg:w-6/12 mx-auto h-auto bg-stone-200/[.7] rounded-2xl">
             <div className="transform transition-all px-4 sm:flex  justify-between">
               <div className=" sm:w-8/12 flex max-w-full ">
