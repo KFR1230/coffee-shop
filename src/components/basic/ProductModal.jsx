@@ -90,7 +90,7 @@ const ProductModal = ({ onClick }) => {
 
   return (
     <Transition.Root show={cartModal} as={Fragment}>
-      <Dialog as="div" className="relative z-30" onClose={setCartModal}>
+      <Dialog as="div" className="relative z-50" onClose={setCartModal}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -103,8 +103,8 @@ const ProductModal = ({ onClick }) => {
           <div className="fixed inset-0 hidden bg-gray-500/75  transition-opacity md:block" />
         </Transition.Child>
 
-        <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-          <div className="flex min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4">
+        <div className="fixed inset-0 z-10 w-screen overflow-y-auto bg-gray-500/25">
+          <div className="flex min-h-full items-center justify-center text-center md:items-center md:px-2 lg:px-4">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -115,7 +115,7 @@ const ProductModal = ({ onClick }) => {
               leaveTo="opacity-0 translate-y-4 md:translate-y-0 md:scale-95"
             >
               <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-20 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                <div className="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:rounded-2xl sm:px-6  md:p-6 lg:p-8">
+                <div className="relative flex w-full items-center rounded-2xl overflow-hidden bg-white px-4 pb-8 pt-6 shadow-2xl sm:rounded-2xl sm:px-6  md:p-6 lg:p-8">
                   <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-8 lg:gap-x-8">
                     <div className="sm:col-span-8 ">
                       <div className="flex justify-between">
