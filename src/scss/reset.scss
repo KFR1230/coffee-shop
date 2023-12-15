@@ -124,6 +124,14 @@ section {
   padding: 0;
   box-sizing: inherit;
 }
+html,
+body {
+  height: 100%;
+}
+#root {
+  min-height: 100svh;
+  height: auto;
+}
 html {
   text-size-adjust: 100%;
   box-sizing: border-box;
