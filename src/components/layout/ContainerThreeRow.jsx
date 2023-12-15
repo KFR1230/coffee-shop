@@ -3,11 +3,12 @@ import Footer from '../basic/Footer';
 import BackToTopBtn from '../basic/BackToTopBtn';
 import { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 const ContainerThreeRow = ({ children }) => {
   const [backToTopBtn, setBackToTopBtn] = useState(false);
   const { isImageLoaded, isAuthentic } = useAuth();
   const navigate = useNavigate();
+  const pathname = useLocation();
 
   const handleScroll = () => {
     if (window.scrollY > 500) {
@@ -36,6 +37,10 @@ const ContainerThreeRow = ({ children }) => {
       document.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
