@@ -53,7 +53,7 @@ function LoginPage() {
         className={
           isImageLoaded
             ? `flex h-svh flex-1 flex-col px-6 py-12 lg:px-8 overflow-y-auto bg-[url(@/assets/image/paper1920.jpg)]`
-            : `flex min-h-full flex-1 flex-col px-6 py-12 lg:px-8 overflow-y-auto bg-[#d6b892]`
+            : `flex h-svh flex-1 flex-col px-6 py-12 lg:px-8 overflow-y-auto bg-[#d6b892]`
         }
       >
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">

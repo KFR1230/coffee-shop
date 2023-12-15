@@ -18,8 +18,8 @@ const InfoModal = ({ isOpen, setIsOpen }) => {
             <div className="fixed inset-0 bg-black bg-opacity-50" />
           </Transition.Child>
 
-          <div className="fixed inset-0 overflow-y-auto">
-            <div className="relative flex min-h-full items-center justify-center py-20 text-center">
+          <div className="fixed inset-0 overflow-y-scroll">
+            <div className="relative flex min-h-full h-svh items-center justify-center py-20 text-center">
               <Transition.Child
                 as="div"
                 enter="ease-out duration-300"
