@@ -27,6 +27,9 @@ export default {
       height: {
         svh: '100svh',
       },
+      minHeight: {
+        svh: '100svh',
+      },
     },
   },
   plugins: [],

@@ -47,8 +47,8 @@ const ContainerThreeRow = ({ children }) => {
       <div
         className={
           isImageLoaded
-            ? "relative h-full container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] pt-16 sm:pt-20"
-            : 'relative h-full container-row flex flex-col bg-[#d6b892] pt-16 sm:pt-20'
+            ? "relative h-auto min-h-svh container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] pt-16 sm:pt-20"
+            : 'relative h-auto min-h-svh container-row flex flex-col bg-[#d6b892] pt-16 sm:pt-20'
         }
       >
         <Header />

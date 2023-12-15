@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      <footer className="bg-yellow-800 w-full h-auto flex-grow">
+      <footer className="bg-yellow-800 w-full h-auto mt-auto">
         <nav
           className="mx-auto flex items-center justify-center p-2 max-sm:p-2"
           aria-label="Global"
