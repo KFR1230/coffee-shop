@@ -49,7 +49,7 @@ const ContainerThreeRow = ({ children }) => {
           isImageLoaded
             ? "relative h-auto min-h-svh container-row flex flex-col bg-[url('./assets/image/paper1920.jpg')] pt-16 sm:pt-20"
             : 'relative h-auto min-h-svh container-row flex flex-col bg-[#d6b892] pt-16 sm:pt-20'
-        }
+        } //auto 延伸，至少要符合螢幕高度。
       >
         <Header />
         <BackToTopBtn

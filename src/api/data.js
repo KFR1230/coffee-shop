@@ -247,6 +247,7 @@ export const changeFinishedStatus = async ({
     timeStyle: 'short',
     hour12: false,
   });
+  const timestamp = new Date();
 
   const memberFinishedRef = collection(db, `${memberId}-finished`);
   //建立新的集合時，同時更改原本的status
@@ -256,6 +257,7 @@ export const changeFinishedStatus = async ({
 
   await setDoc(doc(memberFinishedRef), {
     endDate: date,
+    endDateM: timestamp,
     payType: '付現',
     status: '已完成',
     products: finalProducts,
@@ -266,13 +268,13 @@ export const changeFinishedStatus = async ({
 //最後建立出memberFinished的集合取出過往的結算
 export const getMemberFinished = async ({ memberId }) => {
   const memberRef = collection(db, `${memberId}-finished`);
-  const q = query(memberRef, orderBy('endDate', 'desc'));
-
+  const q = query(memberRef, orderBy('endDateM', 'desc'));
   try {
     const querySnapshot = getDocs(q);
     const data = (await querySnapshot).docs.map((doc) => {
       return doc.data();
     });
+
     return data;
   } catch (error) {
     console.log(error);
