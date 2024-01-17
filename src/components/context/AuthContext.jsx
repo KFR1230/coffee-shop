@@ -19,7 +19,7 @@ const defaultAuthContext = {
 const AuthContext = createContext(defaultAuthContext);
 export const useAuth = () => useContext(AuthContext);
 export const AuthProvider = ({ children }) => {
-  const [memberId, setMemberId] = useState('');
+  const [memberId, setMemberId] = useState(''); //其實不需要這樣儲存，因為在cookie中就有，現在已登入的帳戶。
   const [isAuthentic, setIsAuthentic] = useState(false);
   const { isImageLoaded } = useImgLoading();
   const { pathname } = useLocation();
