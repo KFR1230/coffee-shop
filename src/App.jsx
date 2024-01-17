@@ -20,14 +20,18 @@ function App() {
         <CartProvider>
           <Routes>
             <Route path="*" element={<LoginPage />}></Route>
-            <Route path="/login" element={<LoginPage />}></Route>
-            <Route path="/register" element={<RegisterPage />}></Route>
-            <Route path="/home" element={<HomePage />}></Route>
-            <Route path="/menu" element={<MenuPage />}></Route>
-            <Route path="/cart" element={<CartPage />}></Route>
-            <Route path="/admin/main" element={<AdminBeansPage />}></Route>
-            <Route path="/setting" element={<SettingPage />}></Route>
-            <Route path="/checkout" element={<HistoryPage />}></Route>
+            <Route exact path="/login" element={<LoginPage />}></Route>
+            <Route exact path="/register" element={<RegisterPage />}></Route>
+            <Route exact path="/home" element={<HomePage />}></Route>
+            <Route exact path="/menu" element={<MenuPage />}></Route>
+            <Route exact path="/cart" element={<CartPage />}></Route>
+            <Route
+              exact
+              path="/admin/main"
+              element={<AdminBeansPage />}
+            ></Route>
+            <Route exact path="/setting" element={<SettingPage />}></Route>
+            <Route exact path="/checkout" element={<HistoryPage />}></Route>
           </Routes>
         </CartProvider>
       </AuthProvider>
